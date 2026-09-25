@@ -7,7 +7,6 @@ import useFetch from './useFetch';
 export default function Index() {  
   const { data, carga } = useFetch(); 
   const datos = data as { date: string; explanation: string; title: string; url: string } | null; 
-  // datos es el objeto que contiene informacion
   // profe use data as {} | null;
   /// para que typescript sepa que data es un objeto con esas propiedades y no un objeto generico
   if (carga) { 
